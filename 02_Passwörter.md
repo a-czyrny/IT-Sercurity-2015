@@ -77,7 +77,8 @@ Durch dieses Verfahren werden anhand von Netzwerkreaktionen des Zielsystems Rüc
 
 **17.Was ist Banner Grabbing? Was für ein Ziel wird bei derartigen Verfahren verfolgt?**
 Beim Zugriff auf FTP-Server, Webserver o.Ä. wird manchmal ein Banner (Einleitungstext) mit der Softwareversion und weiteren Informationen mitgesendet. Diese Informationen können teilweise sensible Daten (Version ,...) beinhalten und somit von Angreifern für spezialisierte Exploits ausgenutzt werden.
-Rechtesystem von Unix
+
+## Rechtesystem von Unix
 
 **18. Wie werden Benutzer und wie Gruppen in Unix intern identifiziert? Wo werden diese definiert?**
 * /etc/group Datei (Zuordnung Benutzer: alle Gruppen-Id’s)
