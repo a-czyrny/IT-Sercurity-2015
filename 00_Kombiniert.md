@@ -229,6 +229,7 @@ Beim Zugriff auf FTP-Server, Webserver o.Ä. wird manchmal ein Banner (Einleitun
 
 **24. Welche Sonderregelungen betreffen Prozesse mit einer UID = 0?**
 * 0 gehört Root
+
 # Scanner
 
 **1. Was ist allgemein ein Scanner? Was ist dabei ein Netzwerk- und was ein System-Scanner?**
@@ -331,6 +332,7 @@ und erläutern Sie daran, was zu einem Scann alles gehört.**
 sein könnten? Falls ja, nennen Sie mindestens zwei Beispiele.**
 * Ping of Death: Senden eines fehlerhaften ICMP-Paketes (führt zu Bufferoverflow)
 * Smurf-DoS-Attacke: Kurzeitig hohe Belastung des Netzes
+
 # Intrusion Detection Systeme (IDS)
 
 **1. Was wird unter einer Intrusion verstanden? Nennen Sie auch andere Erklärungen dieses Begriffs. Was spricht für den Begriff Incident? Was würde dieser bedeuten?**
@@ -419,6 +421,7 @@ sein könnten? Falls ja, nennen Sie mindestens zwei Beispiele.**
 
 **15. Kann snort Zugänge bei Feststellung eines Angriffs sperren?**
 * Snort kann keine Zugänge sperren, sondern nur Netzwerkverkehr analysieren und auswerten
+
 # Firewalls
 
 **1. Was wird allgemein unter einer Firewall verstanden?**
@@ -536,6 +539,7 @@ Nachteile:
 
 **18. Wodurch wird entschieden, ob ein empfangenes Paket durch die INPUT- oder durch die FORWARD-Chain „läuft“?**
 * Alle Pakete die als Destination der eigenen IP-Adresse entsprechen gehen in die Input-Chain und alle Pakete mit eine anderen Destination-Adresse gehen in die Forward Chain
+
 # Verschlüsselung und Zertifikate
 
 **1. Lassen sich allein mit symmetrischen Verschlüsselungsverfahren Dokumente signieren? Was ist das Charakteristische dieser Verfahren?**
@@ -644,6 +648,7 @@ Signierung mit asynchroner Verschlüsselung (Privatkey-Signierung eines Hashes).
 * Über den Eintrag in eine CA kann sichergestellt werden, dass die Identität der Person und des öffenltichen Schlüssels übereinstimmen
 * (Wenn der CA vertraut wird!!!!)
 * Uhrzeit muss vor Tod sein
+
 # Symmetrische Verschlüsselung
 
 **1. Worin besteht ein Ciphertext-Only-Angriff bzw. worin ein KnownPlaintext-Angriff?**
@@ -771,6 +776,7 @@ Signierung mit asynchroner Verschlüsselung (Privatkey-Signierung eines Hashes).
 **24. In welchem Zusammenhang stehen Stromchiffre-Verfahren und Pseudozufallsgeneratoren?**
 * Forschaltfuntion erzeugt ähnlich wie ein Pseudozufallsgenerator aus einem übergebenen Startwert zufällige Werte (mit denen Ver-/Entschlüsselt wird)
 * Forschaltfunktion muss beiden Parteien bekannt sein
+
 # Asymmetrische Verschlüsselung
 
 **1. Worin besteht der wesentliche Unterschied zwischen asymmetrischen und symmetrischen Verschlüsselungsalgorithmen, wenn die Implementierungen des Verfahrens betrachtet werden?**
@@ -885,6 +891,7 @@ Nein
 * Nein
 * Für jede Tabelle einen Schlüssel
 * Zeilenweise verschlüsseln
+
 # Hash-Verfahren
 
 **1. Was ist eine Authentifizierung von Nachrichten? Wird dabei auch die Integrität des Inhalts geprüft?**
@@ -937,6 +944,7 @@ Nein
 * Unveränderter Gebrauch verfügbarer Hash-Funktionen
 * Ersetzbarkeit durch andere Hash-Funktionen
 * Einfache Verwendung von Schlüsseln
+
 # Zufall und Zeit
 
 **1. Wodurch unterscheidet sich ein Zufallsbitgenerator von einem Pseudozufallsbitgenerator?**
@@ -967,5 +975,4 @@ Nein
 
 **6. Mit dem Diffie-Helmann-Verfahren vereinbaren Sie eine Zahl, die aber als Schlüssel zu klein ist. Wie könnten Sie z.B. einen Schlüssel mit der richtigen Länge erzeugen?**
 * Bilden eines Hashcodes, das jedes Mal erneut bis die Länge erreichtist
-* Schlüssel als Startwert für Zufallsgenerator verwenden# IT-Sercurity-2015
-Fragen und Antworten.
+* Schlüssel als Startwert für Zufallsgenerator verwenden
