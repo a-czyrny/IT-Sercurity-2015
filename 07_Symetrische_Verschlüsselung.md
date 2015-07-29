@@ -1,3 +1,4 @@
+
 # Symmetrische Verschlüsselung
 
 **1. Worin besteht ein Ciphertext-Only-Angriff bzw. worin ein KnownPlaintext-Angriff?**

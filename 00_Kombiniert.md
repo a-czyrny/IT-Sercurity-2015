@@ -114,6 +114,7 @@ Wie könnten Sie besser kategorisiert werden?
 **26. Eine Firma betreibt einen eigenen Webserver. Wie würden Sie diesen Webserver mit Firewalls schützen?**
 * Server in DMZ, auf keinen Fall in gleichen Netzwerk wie Firmenrechner
 * Ein Firewall vor und eine hinter den Webserver, hinter 2. Firewall kommt lokales Netz
+
 # Passwörter
 
 **1. Was ist eine Identität? Worin besteht beim Einloggen an Rechnern die Identifizierung und worin die Authentifizierung?**
@@ -227,7 +228,8 @@ Beim Zugriff auf FTP-Server, Webserver o.Ä. wird manchmal ein Banner (Einleitun
 * Damit können für ein Programmlauf besondere Rechte ausgeliehen werden.
 
 **24. Welche Sonderregelungen betreffen Prozesse mit einer UID = 0?**
-* 0 gehört Root# Scanner
+* 0 gehört Root
+# Scanner
 
 **1. Was ist allgemein ein Scanner? Was ist dabei ein Netzwerk- und was ein System-Scanner?**
 * Scanner = Programm, das ein System systematisch auf Schwachstellen oder Probleme prüft und teilweise repariert
@@ -328,7 +330,8 @@ und erläutern Sie daran, was zu einem Scann alles gehört.**
 **17.Gibt es für Scanner Tests, die für das zu scannende System gefährlich
 sein könnten? Falls ja, nennen Sie mindestens zwei Beispiele.**
 * Ping of Death: Senden eines fehlerhaften ICMP-Paketes (führt zu Bufferoverflow)
-* Smurf-DoS-Attacke: Kurzeitig hohe Belastung des Netzes# Intrusion Detection Systeme (IDS)
+* Smurf-DoS-Attacke: Kurzeitig hohe Belastung des Netzes
+# Intrusion Detection Systeme (IDS)
 
 **1. Was wird unter einer Intrusion verstanden? Nennen Sie auch andere Erklärungen dieses Begriffs. Was spricht für den Begriff Incident? Was würde dieser bedeuten?**
 * Intrusion (Störung, Verletzung, Eindringen) = Erfolgreicher lesender oder schreibender, aber nicht erlaubter Zugriff auf Daten bzw. Ausführung von Programmen durch organisationsfremde Personen, also von Außen
@@ -415,7 +418,8 @@ sein könnten? Falls ja, nennen Sie mindestens zwei Beispiele.**
 * Snort kann Portscanns erkennen, wenn die ICMP-Pakete vom selben Host an verschiedene Ports des Systems in kurzen Zeitabständen kommen
 
 **15. Kann snort Zugänge bei Feststellung eines Angriffs sperren?**
-* Snort kann keine Zugänge sperren, sondern nur Netzwerkverkehr analysieren und auswerten# Firewalls
+* Snort kann keine Zugänge sperren, sondern nur Netzwerkverkehr analysieren und auswerten
+# Firewalls
 
 **1. Was wird allgemein unter einer Firewall verstanden?**
 * Firewall = Gerät, Betriebssystemkomponente oder Programm, das oder die eine Zugriffskontrolle mit Hilfe eines Filters realisiert
@@ -531,7 +535,8 @@ Nachteile:
 * Drop: Verwerfen
 
 **18. Wodurch wird entschieden, ob ein empfangenes Paket durch die INPUT- oder durch die FORWARD-Chain „läuft“?**
-* Alle Pakete die als Destination der eigenen IP-Adresse entsprechen gehen in die Input-Chain und alle Pakete mit eine anderen Destination-Adresse gehen in die Forward Chain# Verschlüsselung und Zertifikate
+* Alle Pakete die als Destination der eigenen IP-Adresse entsprechen gehen in die Input-Chain und alle Pakete mit eine anderen Destination-Adresse gehen in die Forward Chain
+# Verschlüsselung und Zertifikate
 
 **1. Lassen sich allein mit symmetrischen Verschlüsselungsverfahren Dokumente signieren? Was ist das Charakteristische dieser Verfahren?**
 * Nein, da die Signatur nur bei der asymmetrischen Verschlüsselung funktioniert
@@ -638,7 +643,8 @@ Signierung mit asynchroner Verschlüsselung (Privatkey-Signierung eines Hashes).
 * Es muss sichergestellt werden, dass der öffentliche Schlüssel einer Person wirklich dieser gehört
 * Über den Eintrag in eine CA kann sichergestellt werden, dass die Identität der Person und des öffenltichen Schlüssels übereinstimmen
 * (Wenn der CA vertraut wird!!!!)
-* Uhrzeit muss vor Tod sein# Symmetrische Verschlüsselung
+* Uhrzeit muss vor Tod sein
+# Symmetrische Verschlüsselung
 
 **1. Worin besteht ein Ciphertext-Only-Angriff bzw. worin ein KnownPlaintext-Angriff?**
 * Ciphertext-Only-Attack (Geheimtextanalyse): Der Angreifer kennt nur den Chiffretext.
@@ -764,7 +770,8 @@ Signierung mit asynchroner Verschlüsselung (Privatkey-Signierung eines Hashes).
 
 **24. In welchem Zusammenhang stehen Stromchiffre-Verfahren und Pseudozufallsgeneratoren?**
 * Forschaltfuntion erzeugt ähnlich wie ein Pseudozufallsgenerator aus einem übergebenen Startwert zufällige Werte (mit denen Ver-/Entschlüsselt wird)
-* Forschaltfunktion muss beiden Parteien bekannt sein# Asymmetrische Verschlüsselung
+* Forschaltfunktion muss beiden Parteien bekannt sein
+# Asymmetrische Verschlüsselung
 
 **1. Worin besteht der wesentliche Unterschied zwischen asymmetrischen und symmetrischen Verschlüsselungsalgorithmen, wenn die Implementierungen des Verfahrens betrachtet werden?**
 * Die symmetrischen Verschlüsselungsverfahren basieren auf logischen Bit-Operationen
@@ -877,7 +884,8 @@ Nein
 **27. Gehört das RSA-Verfahren zu den Blockchiffren? Sie wollen eine Datenbank mit RSA verschlüsseln, wie gehen Sie algorithmisch dabei vor?**
 * Nein
 * Für jede Tabelle einen Schlüssel
-* Zeilenweise verschlüsseln# Hash-Verfahren
+* Zeilenweise verschlüsseln
+# Hash-Verfahren
 
 **1. Was ist eine Authentifizierung von Nachrichten? Wird dabei auch die Integrität des Inhalts geprüft?**
 * Prüfung, ob eine Nachricht in der vorliegenden Form von einer bestimmten Identität stammt, d.h. Inhalt und Herkunft werden geprüft.
@@ -928,7 +936,8 @@ Nein
 **9. Wenn Sie das HMAC-Verfahren anwenden: was können Sie dabei erreichen?**
 * Unveränderter Gebrauch verfügbarer Hash-Funktionen
 * Ersetzbarkeit durch andere Hash-Funktionen
-* Einfache Verwendung von Schlüsseln# Zufall und Zeit
+* Einfache Verwendung von Schlüsseln
+# Zufall und Zeit
 
 **1. Wodurch unterscheidet sich ein Zufallsbitgenerator von einem Pseudozufallsbitgenerator?**
 * Zufallsbitgenerator = Random Bit Generator = Gerät oder Verfahren, das eine Sequenz statistisch unabhängiger und gleich verteilter Bitfolgen erzeugt.

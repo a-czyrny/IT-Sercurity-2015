@@ -1,3 +1,4 @@
+
 # Zufall und Zeit
 
 **1. Wodurch unterscheidet sich ein Zufallsbitgenerator von einem Pseudozufallsbitgenerator?**
