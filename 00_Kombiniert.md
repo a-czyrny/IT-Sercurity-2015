@@ -689,8 +689,8 @@ Das Verfahren soll austauschbar bleiben, falls ein verfahren sich als angreifbar
 Ja, aber Attributzertifikate können helfen (Firmenintern).
 
 **16.Nennen Sie zwei symmetrische Verschlüsselungsverfahren, die weite Verbreitung gefunden haben.**
-* Diffie-Hellman-Verfahren
-* RSA-Verfahren
+* DES
+* AES
 
 **17. Wenn zwei Personen über weite Entfernungen ihre Kommunikation mit einem symmetrischen Verfahren verschlüssel wollen: welches schwerwiegendes Problem muss dazu gelöst werden?**
 
@@ -947,12 +947,12 @@ K1 = K2 (!)
 
 1 A wählt zufällig x=2 mit x<7
 2. B wählt zufällig y=5 mit y<7
-3. A berechnet a ≡ g^x mod 7 -> a ≡ 3^2 mod 7 ≡ 2 mod 7
+3. A berechnet a ≡ g^x mod 7 -> a ≡ 3^2 mod 7 ≡ 2
 4. A schickt a=2 an B (A's öffentlicher Schlüssel)
-5. B berechnet b ≡ g^y mod 7 -> b ≡ 3^5 mod 7 ≡ 5 mod 7
+5. B berechnet b ≡ g^y mod 7 -> b ≡ 3^5 mod 7 ≡ 5
 6. B schickt b=5 an A (B's öffentlicher Schlüssel)
-7. A berechnet K1 ≡ b^x mod 7 -> K1 ≡ 5^2 mod 7 ≡ 4 mod 7
-8. B berechnet K2 ≡ a^y mod 7 -> K2 ≡ 2^5 mod 7 ≡ 4 mod 7
+7. A berechnet K1 ≡ b^x mod 7 -> K1 ≡ 5^2 mod 7 ≡ 4
+8. B berechnet K2 ≡ a^y mod 7 -> K2 ≡ 2^5 mod 7 ≡ 4
 
 K1 = K2 = 4
 
