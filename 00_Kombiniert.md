@@ -735,7 +735,7 @@ Signierung mit asynchroner Verschlüsselung (Privatkey-Signierung eines Hashes).
 * Bekannt sind Paare von Chiffre-/Klartexten mit demselben Schlüssel
 
 **2. Schildern Sie eine Situation bzw. ein Verfahren, bei dem Sie als Angreifer mindestens ein Paar(Cipher-Text,Plain-Text) zu einem bestimmten Schlüssel (leicht) erhalten, das Sie zum Brechen der Verschlüsselung benutzen können.**
-* Challenge and Response verfahren
+* Challenge and Response-Verfahren (Feststellung der Identität des gegenüber)
 
 **3. Beschreiben Sie das Verfahren der Verschlüsselung bei One-TimePads? Sind diese sicher?**
 
@@ -852,6 +852,7 @@ Erst die Kombination von Blockchiffre und Betriebsmodus erlaubt es, Nachrichten 
 ![SC](/img/sc.png?raw=true "Stromchiffren")
 
 **23. Nennen Sie ein Beispiel für ein Stromchiffre-Verfahren.**
+
 RC4
 
 **24. In welchem Zusammenhang stehen Stromchiffre-Verfahren und Pseudozufallsgeneratoren?**
