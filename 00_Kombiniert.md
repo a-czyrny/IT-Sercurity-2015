@@ -850,7 +850,7 @@ Erst die Kombination von Blockchiffre und Betriebsmodus erlaubt es, Nachrichten 
 * sofortige Verarbeitung des Klartextes ohne auf eine bestimmte Blocklänge zu warten
 * Stromchiffren = Verschlüsselungsalgorithmen, die keine Einheiten mit festgelegter Größe (Blöcke) benötigen und bei denen die Einheiten ähnlich den Blockmodi verknüpft sind.
 
-![SC](https://raw.githubusercontent.com/a-czyrny/IT-Sercurity-2015/master/img/sc.png?raw=true "Stromchiffren")
+![SC](/img/sc.png?raw=true "Stromchiffren")
 
 **23. Nennen Sie ein Beispiel für ein Stromchiffre-Verfahren.**
 
