@@ -945,7 +945,7 @@ K1 = K2 (!)
 
 **Vorarbeiten**: g=3 und p=7
 
-1 A wählt zufällig x=2 mit x<7
+1. A wählt zufällig x=2 mit x<7
 2. B wählt zufällig y=5 mit y<7
 3. A berechnet a ≡ g^x mod 7 -> a ≡ 3^2 mod 7 ≡ 2
 4. A schickt a=2 an B (A's öffentlicher Schlüssel)
