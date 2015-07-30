@@ -21,6 +21,7 @@
 * **Schritt 4**: Übernahme des Systems (Backdoor, modifizieren v. Rechten, Rootkits, …)
 
 **5. Welches ist das schwächste Glied in der Sicherheitskette?**
+
 2/3 aller ernsthaften Probleme entstehen durch die eigenen Mitarbeiter/innen.
 
 **6. Auf welchen Mängeln von Systemen beruht das Hacken von Computern in Netzen?**
