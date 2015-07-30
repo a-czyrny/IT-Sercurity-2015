@@ -698,7 +698,7 @@ Sichere Übermittlung des Schlüssels.
 
 **18.Wie können zwei sich nicht persönlich kennende Personen ein Geheimnis, z.B. einen Schlüssel oder ein Passwort, austauschen, ohne dass Fremde das Geheimnis erfahren?**
 
-Mit dem Diffie-Hellman Verfahren (A und B einigen sich auf einem Prim- und natürliche Zahl welche öffentlich sind)
+Mit dem Diffie-Hellman Verfahren (A und B einigen sich auf einem Prim- und natürliche Zahl welche öffentlich sind).
 
 **19.Skizzieren Sie das Prinzip des Man-in-the-Middle-Angriffs.**
 
@@ -834,13 +834,12 @@ Erst die Kombination von Blockchiffre und Betriebsmodus erlaubt es, Nachrichten 
 * Gleiche Blöcke werden gleich verschlüsselt
 
 **20. Beschreiben Sie das Verfahren der Betriebsart Output-FeedbackMode (OFD).**
+
 1. Verschlüsselung eines Intalivektors I (128Bit) = I1
 2. XOR Verknüpfung von I1 mit Klartextblock K1 = E2 (erster verschlüsselter Block)
 3. Verschlüsselung des verschlüsselten Initialsverkors I1 = I2
 4. XOR Verknüpfung von I2 mit Klartextblock K2 = E3 (zweiter verschlüsselter Block)
 5. siehe 3. mit I2 und 4. mit I3 und K3
-
-![OFD](/img/ofd.png?raw=true "Output-FeedbackMode")
 
 **21. Was macht die Betriebsart Output-Feedback-Mode (OFD) so performant? Hat der Electronic Codebook (ECB) denselben Performanzvorteil?**
 * Die Verschlüsselungsketten können im Voraus/parallel berechnet werden, so dass hohe Parallelität erreicht werden kann.
@@ -850,7 +849,7 @@ Erst die Kombination von Blockchiffre und Betriebsmodus erlaubt es, Nachrichten 
 * sofortige Verarbeitung des Klartextes ohne auf eine bestimmte Blocklänge zu warten
 * Stromchiffren = Verschlüsselungsalgorithmen, die keine Einheiten mit festgelegter Größe (Blöcke) benötigen und bei denen die Einheiten ähnlich den Blockmodi verknüpft sind.
 
-![SC](/img/sc.png?raw=true "Stromchiffren")
+Schlüssel -> Wert -> Fortschaltfunktion (über Wert laufen) -> Ergebnis kombinieren mit Klartext -> Chiffretext
 
 **23. Nennen Sie ein Beispiel für ein Stromchiffre-Verfahren.**
 
@@ -923,11 +922,39 @@ Diskreter Logarithmus (siehe Seite 18).
 
 **15. Beschreiben Sie den Algorithmus des Diffie-Hellman-Verfahrens in einer Freistil-Notation jeweils aus der Sicht der Kommunikationspartner.**
 
-![DH](/img/dh.png?raw=true "Diffie-Hellman-Verfahrens")
+**Vorbereitung**
+
+A und B einigen sich auf eine Primzahl **p** und eine natürliche Zahl **g** mit **g** < **p** (**p** und **g** sind öffentlich)
+
+1. A wählt zufällig x mit x<p
+2. A berechnet a ≡ g^x mod p
+3. A schickt a an B (öffentlich)
+4. A erhält b von B (öffentlich)
+5. A berechnet K1 ≡ b^x mod p
+
+
+1. B wählt zufällig y mit y<p
+2. B berechnet b ≡ g^y mod p
+3. B schickt b an A (öffentlich)
+4. B erhält a von A (öffentlich)
+5. B berechnet K2 ≡ a^y mod p
+
+K1 = K2 (!)
 
 **16. Erläutern Sie das Diffie-Hellman-Verfahren anhand eines kleinen Zahlenbeispiels.**
 
-![DHZ](/img/dhz.png?raw=true "Diffie-Hellman-Verfahren Beispiel")
+**Vorarbeiten**: g=3 und p=7
+
+1 A wählt zufällig x=2 mit x<7
+2. B wählt zufällig y=5 mit y<7
+3. A berechnet a ≡ g^x mod 7 -> a ≡ 3^2 mod 7 ≡ 2 mod 7
+4. A schickt a=2 an B (A's öffentlicher Schlüssel)
+5. B berechnet b ≡ g^y mod 7 -> b ≡ 3^5 mod 7 ≡ 5 mod 7
+6. B schickt b=5 an A (B's öffentlicher Schlüssel)
+7. A berechnet K1 ≡ b^x mod 7 -> K1 ≡ 5^2 mod 7 ≡ 4 mod 7
+8. B berechnet K2 ≡ a^y mod 7 -> K2 ≡ 2^5 mod 7 ≡ 4 mod 7
+
+K1 = K2 = 4
 
 **17. Kann irgendein Schlüssel des RSA-Schlüsselpaares zum öffentlichen und der andere zum privaten gemacht werden? Bitte begründen Sie die Antwort.**
 
